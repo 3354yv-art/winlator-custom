@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Winlator</string>
+    <string name="app_name">Winlator Plus</string>
     <string name="run">Run</string>
     <string name="edit">Edit</string>
     <string name="remove">Remove</string>
@@ -357,4 +357,8 @@
     <string name="fgs_notification_content_else">Winlator is running in the background</string>
     <string name="save_mem_on_run_from_steam">Save memory on run from Steam</string>
     <string name="present_mode">Present Mode</string>
+    <string name="open_app_first">Open the app once to finish the installation, then try again</string>
+    <string name="create_container_first">Create a container first, then try again</string>
+    <string name="copying_file_to_container">Copying the file to the container...</string>
+    <string name="unable_to_open_file">Unable to open this file</string>
 </resources>

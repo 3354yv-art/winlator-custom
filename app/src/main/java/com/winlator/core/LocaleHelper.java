@@ -10,7 +10,7 @@ import androidx.preference.PreferenceManager;
 import java.util.Locale;
 
 public class LocaleHelper {
-    private static final String[] supportedLocales = {"en_US", "pt_BR", "ru_RU"};
+    private static final String[] supportedLocales = {"en_US", "pt_BR", "ru_RU", "he_IL"};
 
     public static int getLocaleIndex(Context context) {
         Configuration configuration = context.getResources().getConfiguration();
@@ -40,6 +40,7 @@ public class LocaleHelper {
     public static void setEnvVars(EnvVars envVars) {
         Locale locale = Locale.getDefault();
         for (String name : supportedLocales) {
+            if (name.startsWith("he")) continue; // Wine keeps en_US locale files
             if (locale.toString().startsWith(name.substring(0, 2))) {
                 envVars.put("LC_ALL", name+".UTF-8");
                 return;
