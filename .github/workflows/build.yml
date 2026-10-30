@@ -3,6 +3,8 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+permissions:
+  contents: write
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -25,3 +27,10 @@ jobs:
         with:
           name: winlator-apk
           path: app/build/outputs/apk/debug/*.apk
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cp app/build/outputs/apk/debug/*.apk Winlator-Plus-1.0.0.apk
+          gh release delete latest -y --cleanup-tag || true
+          gh release create latest Winlator-Plus-1.0.0.apk --title "Winlator Plus 1.0.0" --notes "APK ready for install" --target main
