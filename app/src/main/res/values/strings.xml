@@ -361,4 +361,10 @@
     <string name="create_container_first">Create a container first, then try again</string>
     <string name="copying_file_to_container">Copying the file to the container...</string>
     <string name="unable_to_open_file">Unable to open this file</string>
+    <string name="drop_file_here">Drop a Windows file here, or tap to choose one</string>
+    <string name="supported_file_types">exe  msi  bat  cmd</string>
+    <string name="choose_file">Choose file</string>
+    <string name="advanced_mode">Advanced settings</string>
+    <string name="preparing_environment">Preparing the environment for the first time...</string>
+    <string name="drop_not_supported">This item cannot be opened. Please use Choose file</string>
 </resources>

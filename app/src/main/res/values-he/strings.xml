@@ -186,4 +186,10 @@
     <string name="copying_file_to_container">מעתיק את הקובץ לקונטיינר...</string>
     <string name="unable_to_open_file">לא ניתן לפתוח את הקובץ הזה</string>
     <string name="app_name">Winlator Plus</string>
+    <string name="drop_file_here">גרור לכאן קובץ ווינדוס, או לחץ לבחירת קובץ</string>
+    <string name="supported_file_types">exe  msi  bat  cmd</string>
+    <string name="choose_file">בחר קובץ</string>
+    <string name="advanced_mode">הגדרות מתקדמות</string>
+    <string name="preparing_environment">מכין את הסביבה בפעם הראשונה...</string>
+    <string name="drop_not_supported">אי אפשר לפתוח פריט זה. אפשר להשתמש בבחירת קובץ</string>
 </resources>
